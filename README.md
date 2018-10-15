@@ -8,7 +8,6 @@ The Feed Reader app is hosted [here](https://wryhder.github.io/FEND-Feed-Reader-
 Results of all tests run are displayed at the end of the page.
 
 ## Run app locally
-To run app:
 1. Clone the repo
 ```
 git clone https://github.com/Wryhder/FEND-Feed-Reader-Testing.git
