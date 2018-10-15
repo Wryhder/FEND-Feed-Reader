@@ -6,7 +6,13 @@ Objective of the project is to learn how to use Jasmine to write tests against a
 The Feed Reader app is hosted [here]().
 Results of all tests run are displayed at the end of the page.
 
-## Why this Project?
+## Run app locally
+To run app:
+1. Clone the repo
+```
+git clone https://github.com/Wryhder/FEND-Feed-Reader-Testing.git
+```
+2. Open index.html in a browser
 
 Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
 
