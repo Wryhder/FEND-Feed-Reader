@@ -1,6 +1,3 @@
-// Global variables
-const feed = document.querySelector('.feed');
-
 /* Tests are placed within the $() function
  * to ensure they don't run until the DOM is ready
  */
@@ -59,7 +56,8 @@ $(function() {
         });
     });
 
-    describe('Initial Entries', function() {
+    describe('Initial Entries', function () {
+        const feed = document.querySelector('.feed');
 
         beforeEach(function(done) {
             loadFeed(0, done);
@@ -74,6 +72,7 @@ $(function() {
     });
 
     describe('New Feed Selection', function () {
+        const feed = document.querySelector('.feed');
         const feed1 = [];
         
         beforeEach(function(done) {
