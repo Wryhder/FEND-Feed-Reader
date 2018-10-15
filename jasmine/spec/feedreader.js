@@ -38,7 +38,6 @@ $(function() {
         });
     });
 
-    /* Test suite for menu */
     describe('The menu', function () {
         const body = document.querySelector('body');
             
@@ -76,7 +75,7 @@ $(function() {
 
     describe('New Feed Selection', function () {
         const feed1 = [];
-
+        
         beforeEach(function(done) {
             loadFeed(0);
 
