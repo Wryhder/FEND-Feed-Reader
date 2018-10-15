@@ -71,11 +71,31 @@ $(function() {
         });
     });
 
+    describe('New Feed Selection', function () {
+        const feed1 = [];
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
+        beforeEach(function(done) {
+            loadFeed(0);
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
+            // Convert feed's children elements into an array,
+            // loop over the array and push each entry's
+            // innerText into the feed1 array
+            for (entry of Array.from(feed.children)) {
+                feed1.push(entry.innerText)
+            }
+
+            loadFeed(1, done);
+        });
+
+        /* Ensures that when a new feed is loaded
+         * by the loadFeed function, the content actually changes
          */
+        it('content changes', function () {
+            // Compare entries from output of loadFeed(0)
+            // against entries from loadFeed(1)
+            Array.from(feed.children).forEach(function(entry, index) {
+                expect(entry.innerText).not.toBe(feed1[index]);
+            });
+        });
+    });  
 }());
