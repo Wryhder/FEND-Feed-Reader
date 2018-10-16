@@ -73,8 +73,8 @@ $(function() {
 
     describe('New Feed Selection', function () {
         const feed = document.querySelector('.feed');
-        let oldFeed,
-            newFeed;
+        let oldFeedText,
+            newFeedText;
         
         beforeEach(function(done) {
             loadFeed(0, function() {
