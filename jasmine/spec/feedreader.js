@@ -78,10 +78,10 @@ $(function() {
         
         beforeEach(function(done) {
             loadFeed(0, function() {
-                oldFeed = feed.innerText;
+                oldFeedText = feed.innerText;
 
                 loadFeed(1, function() {
-                    newFeed = feed.innerText;
+                    newFeedText = feed.innerText;
                     done();
                 });
             });
@@ -93,7 +93,7 @@ $(function() {
         it('content changes', function () {
             // Compare entries from output of loadFeed(0)
             // against entries from loadFeed(1)
-            expect(oldFeed).not.toBe(newFeed);
+            expect(oldFeedText).not.toBe(newFeedText);
         });
     });  
 }());
