@@ -57,7 +57,6 @@ $(function() {
     });
 
     describe('Initial Entries', function () {
-        const feedEntries = document.querySelectorAll('.feed .entry');
 
         beforeEach(function(done) {
             loadFeed(0, done);
@@ -67,6 +66,7 @@ $(function() {
          * there is at least a single .entry element within the .feed container
          */
         it('completes work', function() {
+            const feedEntries = document.querySelectorAll('.feed .entry');
             expect(feedEntries.length > 0).toBe(true);
         });
     });
