@@ -73,19 +73,18 @@ $(function() {
 
     describe('New Feed Selection', function () {
         const feed = document.querySelector('.feed');
-        const feed1 = [];
+        let oldFeed,
+            newFeed;
         
         beforeEach(function(done) {
-            loadFeed(0);
+            loadFeed(0, function() {
+                oldFeed = feed.innerText;
 
-            // Convert feed's children elements into an array,
-            // loop over the array and push each entry's
-            // innerText into the feed1 array
-            for (entry of Array.from(feed.children)) {
-                feed1.push(entry.innerText)
-            }
-
-            loadFeed(1, done);
+                loadFeed(1, function() {
+                    newFeed = feed.innerText;
+                    done();
+                });
+            });
         });
 
         /* Ensures that when a new feed is loaded
@@ -94,9 +93,7 @@ $(function() {
         it('content changes', function () {
             // Compare entries from output of loadFeed(0)
             // against entries from loadFeed(1)
-            Array.from(feed.children).forEach(function(entry, index) {
-                expect(entry.innerText).not.toBe(feed1[index]);
-            });
+            expect(oldFeed).not.toBe(newFeed);
         });
     });  
 }());
