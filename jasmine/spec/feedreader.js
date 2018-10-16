@@ -91,8 +91,8 @@ $(function() {
          * by the loadFeed function, the content actually changes
          */
         it('content changes', function () {
-            // Compare entries from output of loadFeed(0)
-            // against entries from loadFeed(1)
+            // Compare output of loadFeed(0)
+            // against output of loadFeed(1)
             expect(oldFeedText).not.toBe(newFeedText);
         });
     });  
