@@ -9,15 +9,15 @@ Results of all tests run are displayed at the end of the page.
 ## Tests
 
 The test suites include tests for:
-1. **The RSS feeds**, to ensure each feed has a name and url
-2. **The menu**, to ensure the menu toggles on/off when the menu icon is clicked
-3. **Initial feed entries**, to ensure there is at least one feed entry when the page loads
-4. **New feed selection**, to ensure that page content changes when a new feed is loaded
+1. **The RSS feeds**, to ensure each feed has a name and url.
+2. **The menu**, to ensure the menu toggles on/off when the menu icon is clicked.
+3. **Initial feed entries**, to ensure there is at least one feed entry when the page loads.
+4. **New feed selection**, to ensure that page content changes when a new feed is loaded.
 
 ## Run app locally
-1. Clone the repo
+1. Clone the repo.
 ```
 git clone https://github.com/Wryhder/FEND-Feed-Reader-Testing.git
 ```
-2. Open index.html in a browser
+2. Open index.html in a browser.
  
