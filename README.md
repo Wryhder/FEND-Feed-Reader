@@ -1,8 +1,7 @@
 # Project Overview
 
-Feed Reader Testing is the fourth project required to graduate Udacity's Front-End Nanodegree program.
-Objective of the project is to learn how to use [Jasmine](https://jasmine.github.io/index.html) to write tests against a pre-existing application (a web-based application that reads RSS feeds).
-The tests are written using [v2.1.2](https://jasmine.github.io/2.1/introduction); the library is [already included](https://github.com/Wryhder/FEND-Feed-Reader-Testing/tree/master/jasmine/lib/jasmine-2.1.2) in the files, so you do not need to worry about getting it.
+Objective of the Feed Reader Testing project is to learn how to use [Jasmine](https://jasmine.github.io/index.html) to write tests against a pre-existing application (a web-based application that reads RSS feeds).
+The tests are written using [v2.1.2](https://jasmine.github.io/2.1/introduction); the library is [included](https://github.com/Wryhder/FEND-Feed-Reader-Testing/tree/master/jasmine/lib/jasmine-2.1.2) in the files, so you do not need to worry about getting it.
 
 The Feed Reader app is hosted [here](https://wryhder.github.io/FEND-Feed-Reader-Testing/).
 Results of all tests run are displayed at the end of the page.
