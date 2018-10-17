@@ -73,15 +73,15 @@ $(function() {
 
     describe('New Feed Selection', function () {
         const feed = document.querySelector('.feed');
-        let oldFeedText,
-            newFeedText;
+        let oldFeed,
+            newFeed;
         
         beforeEach(function(done) {
             loadFeed(0, function() {
-                oldFeedText = feed.innerText;
+                oldFeed = feed.innerHTML;
 
                 loadFeed(1, function() {
-                    newFeedText = feed.innerText;
+                    newFeed = feed.innerHTML;
                     done();
                 });
             });
@@ -93,7 +93,7 @@ $(function() {
         it('content changes', function () {
             // Compare output of loadFeed(0)
             // against output of loadFeed(1)
-            expect(oldFeedText).not.toBe(newFeedText);
+            expect(oldFeed).not.toBe(newFeed);
         });
     });  
 }());
