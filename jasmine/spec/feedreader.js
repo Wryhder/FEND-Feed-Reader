@@ -18,20 +18,20 @@ $(function() {
          * and that the URL is not empty
          */
         it('url is defined', function() {
-            for (const feed of allFeeds) {
+            allFeeds.forEach(feed => {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
-            }
+            });
         });
 
         /* Ensures that the allFeeds object has a name defined
          * and that the name is not empty
          */
         it('name is defined', function () {
-            for (const feed of allFeeds) {
+            allFeeds.forEach(feed => {
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
-            }
+            });
         });
     });
 
